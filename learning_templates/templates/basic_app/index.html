@@ -1,0 +1,11 @@
+<!doctype html>
+
+{% extends "basic_app/base.html" %}
+
+  {% block body_block %}
+  {% load my_extra %}
+    <h1>Welcome to INDEX</h1>
+    <h2>This is index.html showing</h2>
+    <h1>{{ text|decoy:'world'  }}</h1>
+    <h1>{{ number|add:"99" }}</h1>
+    {% endblock %}
